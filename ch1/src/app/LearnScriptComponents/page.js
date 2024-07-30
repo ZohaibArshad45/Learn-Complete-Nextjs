@@ -12,7 +12,7 @@ const ScriptComponent = () => {
       <p>Show in console | For this we need to make file in public folder </p>
 
       {/* make file in public folder */}
-      <Script src='/ForScriptComponent.js'/>
+      {/* <Script src='/ForScriptComponent.js'/> */}
 
        {/* we can also use onload function */}
       <Script src='/ForScriptComponent.js' onLoad={() => { console.log('kia hall ha') }} />
