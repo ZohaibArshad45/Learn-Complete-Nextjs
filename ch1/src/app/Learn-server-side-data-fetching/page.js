@@ -11,31 +11,19 @@ const serverSide = async () => {
     const myres = await getdata()
     return (
         <>
-        
-        
             <h1 className="flex flex-col  items-center m-10 text-yellow-500"> Data Fetching By Sever Side | API</h1>
             {
                 myres.map((e) =>
                     <>
                         <li key={e.id}>{e.title}</li>
                         <Button data = {e.id} />
-                        <hr />
-                        
-                        
-
-                        
-                    
-
+                        <hr />              
                     </>
                 )
             }
-
-
-
         </>
     )
 }
-
 export default serverSide
 
 

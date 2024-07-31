@@ -3,7 +3,7 @@
  }
  kuchbhi()
 
-// ---------------------------
+// ----------- Second and we can use many----------------
 const kuchbhi2 = ()=>{
     console.log('hsecond run ')
  }
