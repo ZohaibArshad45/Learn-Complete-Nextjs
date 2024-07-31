@@ -1,6 +1,9 @@
 import React from 'react'
 import Button from './button'
 
+// fetch
+// make async
+
 async function getdata() {
     const myData = await fetch('https://jsonplaceholder.typicode.com/albums')
     const res = await myData.json()

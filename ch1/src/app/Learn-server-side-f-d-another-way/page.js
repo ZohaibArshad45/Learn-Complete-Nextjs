@@ -34,7 +34,7 @@ const serverDataFetch = async () => {
       <div className='ml-20'>
         {listUser && listUser.length > 0 ?
           listUser.map((a) => <li className='mb-3 cursor-pointer'>
-            <Link href={`/server-data-fetch/${a.id}`}>{a.firstName}</Link>
+            <Link href={`/Learn-server-side-f-d-another-way/${a.id}`}>{a.firstName}</Link>
           </li>)
           :
           null}
