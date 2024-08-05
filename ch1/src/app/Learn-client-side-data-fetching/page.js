@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 
 async function getData() {
     let Data = await fetch('https://jsonplaceholder.typicode.com/albums')
-    let newdata = Data.json()
+    let newdata = await Data.json()
     return newdata
 }
 
@@ -14,6 +14,12 @@ const clientSide = () => {
         const fetchdata = async ()=>{
             let fetchdataUser = await getData()
             setposts(fetchdataUser)
+
+            //// asy edr hi function bana sakhty ha, but hum upper bany gy
+            // let Data = await fetch('https://jsonplaceholder.typicode.com/albums')
+            // let newdata = await Data.json()
+            // setposts(newdata)
+
         }
         fetchdata() 
     }, [])
