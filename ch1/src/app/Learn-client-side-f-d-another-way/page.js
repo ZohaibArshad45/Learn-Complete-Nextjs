@@ -11,6 +11,8 @@ const clientSide = () => {
         async function getData() {
             const Data = await fetch('https://jsonplaceholder.typicode.com/albums')
             setposts(await Data.json())
+            // const newdata  =await Data.json()
+            // setposts(newdata)
         }
         getData()
 
