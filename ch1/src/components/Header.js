@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <div className=" flex gap-5 justify-center items-center p-7 w-full bg-blue-950 ">
+      <div className="  flex gap-5 justify-center items-center p-7 w-full bg-blue-950  ">
         <Link href={'/'}>Home</Link>
         <Link href={'profile'}>Profile</Link>
         <Link href={'account/kuchbhilikhlo'}>Account</Link>
