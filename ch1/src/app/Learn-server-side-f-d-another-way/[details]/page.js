@@ -1,3 +1,6 @@
+// for detail page this is mothed is more confuess 
+// you can see in Static Site Generation 
+// (Learn-Static-Site-Generation-(SSG))
 import React from 'react'
 
 async function fetchUserDetails(currentUserID) {

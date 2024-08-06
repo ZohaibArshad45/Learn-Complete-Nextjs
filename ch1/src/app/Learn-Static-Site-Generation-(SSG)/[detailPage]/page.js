@@ -10,8 +10,13 @@ const StaticDetails = async (props) => {
   return (
     <>
     <h1>Static User Info : </h1>
-    <h1>{userID.id}</h1>
-    <h1>{userID.name}</h1>
+    <h1>Name : {userID.name}</h1>
+    <h1>Email : {userID.email}</h1>
+    <h1>Address: {userID.address.suite}</h1>
+    <h1>ID : {userID.id}</h1>
+    <h1>ZipCode : {userID.address.zipcode}</h1>
+    <h1>GEO Lat : {userID.address.geo.lat}</h1>
+    <h1>GEO Lng : {userID.address.geo.lng}</h1>
       
     </>
   )
