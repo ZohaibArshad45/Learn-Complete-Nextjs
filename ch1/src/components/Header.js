@@ -33,7 +33,7 @@ export default function Home() {
         <button onClick={handle2}>anOther-way-navigation</button>
         {/* another way to navigation */}
         <button onClick={()=> router.push('products')}>MoreOther-way-navigation</button>
-        <button onClick={()=> router.push('pay')}>Pay</button>
+        <button onClick={()=> router.push('pay')}>Pay btn</button>
       </div>
     
     </>

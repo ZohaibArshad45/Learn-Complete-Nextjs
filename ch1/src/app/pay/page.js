@@ -1,6 +1,7 @@
 import React from 'react'
 
 const payPage = () => {
+  
   return (
     <div>
         <h1>Pay Page</h1>

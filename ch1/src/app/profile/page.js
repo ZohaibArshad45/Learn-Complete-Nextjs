@@ -3,7 +3,7 @@ import React from 'react'
 
 const profile = () => {
 
-    // assume on login
+    // assume on not login
     const loginpage = null
     if (loginpage === null) redirect('login')
 

@@ -2,7 +2,7 @@ import React from 'react'
 import getDataAPI from '../../../../services/page'
 
 const StaticDetails = async (props) => {
-  const data =  await getDataAPI()
+  const data =  await getDataAPI() // getDataAPI function hum ny servers (Src sy baher) ma banaya howa ha
   // console.log(props.params.detailPage)
   const usercheck  = props.params.detailPage
   const userID  = data[usercheck - 1] 
@@ -23,3 +23,21 @@ const StaticDetails = async (props) => {
 }
 
 export default StaticDetails
+
+
+
+
+
+// ------------------------------------------------
+// static side generation 
+// function name bilkul same huna chahia (generateStaticParams)
+export const generateStaticParams = async ()=>{
+  const data = await getDataAPI() // getDataAPI function hum ny servers (Src sy baher) ma banaya howa ha
+  return data.map((data)=>{
+    id : data.id .toString()
+
+  })
+
+}
+// After this we need to make build
+// npm run build
