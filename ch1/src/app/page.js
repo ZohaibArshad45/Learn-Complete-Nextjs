@@ -32,6 +32,7 @@ const page = () => {
         <button className='mt-3 p-2 bg-slate-800 w-96 m-auto border rounded-lg border-gray-50 hover:bg-red-700' onClick={() => router.push('LearnLoadingAPI')}> Learn Loading API </button>
         <button className='mt-3 p-2 bg-slate-800 w-96 m-auto border rounded-lg border-gray-50 hover:bg-red-900' onClick={StaticSite}> Learn Static Site Genenration (SSG) | API </button>
         <button className='mt-3 p-2 bg-slate-800 w-96 m-auto border rounded-lg border-gray-50 hover:bg-red-900' onClick={() => router.push('Learn-redirection')}> Learn Redirection </button>
+        <button className='mt-3 p-2 bg-slate-800 w-96 m-auto border rounded-lg border-gray-50 hover:bg-red-900' onClick={() => router.push('Learn-Environment-Variable')}> Learn Environment Variable </button>
 
       </div>
 
