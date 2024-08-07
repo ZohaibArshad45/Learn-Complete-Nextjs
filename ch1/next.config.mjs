@@ -12,8 +12,10 @@ const nextConfig = {
                 destination : ' oska path dana jidr redirect krna forexample login page',
                 permanent : ' if we delete page permanent, otherwise is na use kro no issue, but source aur destination Lazami h'
             },
+            // for dynamic route we use /profile/:/id 
+            // first folder name the /: second folder name
             {
-                source: 'is ma oska path dana jisy redirect krwana forexample profile page',
+                source: 'is ma oska path dana jisy redirect krwana forexample profile page/:inside folder name',
                 destination : ' oska path dana jidr redirect krna forexample login page'
             },
             {
