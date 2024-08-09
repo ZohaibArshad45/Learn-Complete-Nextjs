@@ -18,12 +18,12 @@ export const GET = (req, value)=>{
 
 // // ========================== Delete ======================
 // // check in postman
-// export const DELETE = (req, value) =>{
-//     let emloyeeeID = value.params.dynamicRoute
-//     if(emloyeeeID){
-//         return NextResponse.json({Result : 'Employee Info Delete Successfully'}, {status:200})
-//     }
-//     else{
-//         return NextResponse.json({Result : 'Employee not Found'}, {status:404})
-//     }
-// }
+export const DELETE = (req, value) =>{
+    let emloyeeeID = value.params.dynamicRoute
+    if(emloyeeeID){
+        return NextResponse.json({Result : 'Employee Info Delete Successfully', success: true}, {status:200})
+    }
+    else{
+        return NextResponse.json({Result : 'Employee not Found', success: true}, {status:404})
+    }
+}
