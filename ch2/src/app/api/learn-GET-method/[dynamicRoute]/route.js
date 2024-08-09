@@ -13,6 +13,17 @@ export const GET = (req, value)=>{
     // let result = mydata.length == 0 ? 'Not Found' : mydata
     let result = mydata.length == 0 ? { result :'Not Found'} : {result: mydata}
     return NextResponse.json(result)
-
-
 }
+
+
+// // ========================== Delete ======================
+// // check in postman
+// export const DELETE = (req, value) =>{
+//     let emloyeeeID = value.params.dynamicRoute
+//     if(emloyeeeID){
+//         return NextResponse.json({Result : 'Employee Info Delete Successfully'}, {status:200})
+//     }
+//     else{
+//         return NextResponse.json({Result : 'Employee not Found'}, {status:404})
+//     }
+// }

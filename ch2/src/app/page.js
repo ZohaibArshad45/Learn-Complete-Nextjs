@@ -14,6 +14,7 @@ export default function Home() {
       <button className="bg-pink-700 p-1 pl-4 pr-4 rounded-lg mt-2 hover:bg-yellow-500" onClick={firstAPI}>What is API, About API</button>
       <button className="bg-pink-700 p-1 pl-4 pr-4 rounded-lg mt-2 hover:bg-yellow-500" onClick={()=> router.push('/api/learn-GET-method')}>Own API, GET method</button>
       <button className="bg-pink-700 p-1 pl-4 pr-4 rounded-lg mt-2 hover:bg-yellow-500" onClick={()=> router.push('/api/learn-post-method')}>Postman, POST method</button>
+      <button className="bg-pink-700 p-1 pl-4 pr-4 rounded-lg mt-2 hover:bg-yellow-500" onClick={()=> router.push('/register')}>Register Page, POST method</button>
 
     </main>
   );
