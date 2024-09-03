@@ -1,0 +1,8 @@
+const username = process.env.myusernmae
+import { errors } from './../../../../ch1/.next/server/vendor-chunks/next';
+const password = process.env.mypassword
+
+
+if (!username || !password){
+    throw new errors("Mongodb Connection Error:")
+}
